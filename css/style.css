@@ -4,13 +4,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
+
 :root {
   --font1: "Overpass", sans-serif;
   --font2: "Ubuntu", sans-serif;
   --gradient-very-light-red:hsl(13, 100%, 72%);
-  --gradient-light-red: hsl(353, 100%, 62%)
+  --gradient-light-red: hsl(353, 100%, 62%);
+  --padding-container: 80px 0;
+  --color-white:hsl(0, 0%, 100%);
+  --color-light-red:  hsl(356, 100%, 66%);
+--color-very-light-red: hsl(355, 100%, 74%);
+--color-very-dark-blue: hsl(208, 49%, 24%);
 }
 
 body {
@@ -20,6 +25,56 @@ body {
 .hero{
     min-height: 100vh;
     background-image: linear-gradient(var(--gradient-very-light-red),var(--gradient-light-red));
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+
+}
+.nav {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+
+}
+.hero__main{
+    text-align: center;
+    color: var(--color-white) ;
+}
+.hero__title{
+    font-size: 2.3rem;
+}
+
+.hero__subtitle{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 1em;
+}
+.hero__buttons{
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: center;
+    gap:20px;
+}
+.hero__cta{
+    text-decoration: none;
+    border: 1px solid currentColor;
+    padding: 12px 16px;
+    border-radius: 30px;
+    background: var(--color-white);
+    color:var(--color-light-red);
+    font-family: var(--font2);
+    font-weight: 600;
+}
+.hero__cta--background{
+    --color-white:: transparent;
+    --color-light-red:: var(--color-white)
 }
 
 
