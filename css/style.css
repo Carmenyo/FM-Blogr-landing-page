@@ -11,18 +11,21 @@
   --font2: "Ubuntu", sans-serif;
   --gradient-very-light-red:hsl(13, 100%, 72%);
   --gradient-light-red: hsl(353, 100%, 62%);
+  --gradient-v-gray-blue: hsl(237, 17%, 21%);
+  --gradient-v-d-desaturated-blue: hsl(237, 23%, 32%);
+
   --padding-container: 80px 0;
+
+
   --color-white:hsl(0, 0%, 100%);
   --color-light-red:  hsl(356, 100%, 66%);
 --color-very-light-red: hsl(355, 100%, 74%);
 --color-very-dark-blue: hsl(208, 49%, 24%);
 --color-Grayish-blue: hsl(240, 2%, 79%);
-
-
 --color-very-dark-grayish-blue: hsl(207, 13%, 34%);
 --color-very-dark-black-blue: hsl(240, 10%, 16%);
---color-very-dark-gray-blue: hsl(237, 17%, 21%);
---color-very-dark-desaturated-blue: hsl(237, 23%, 32%);
+
+
 }
 
 body {
@@ -30,12 +33,13 @@ body {
 
 }
 .hero{
+   padding: var(--padding-container:0);
     overflow: hidden;
     min-height: 100vh;
     background-image: linear-gradient(var(--gradient-very-light-red),var(--gradient-light-red));
     position: relative;
     z-index: 1;
-    border-bottom-left-radius: 90px;
+   border-radius: 0 0 0 90px;
 }
 .container{
     width: 90%;
@@ -108,15 +112,22 @@ body {
 }
 
 .designed__illustration{
- height: 350px;
+
     background-position: center;
     background-image: url(../images/illustration-editor-mobile.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
+.designed__illustration--right{
+    height: 350px;
+    background-image: url(../images/illustration-laptop-mobile.svg);
+    background-position: center;
+    background-size: cover;
+
+}
 .designed__paragraf{
     text-align: center;
-    color:var(--color-very-dark-grayish-blue);
+    color:var(--gradient-v-gray-blue)
     line-height: 1.5;
     letter-spacing: 1px;
     font-family: var(--font2);
@@ -129,19 +140,41 @@ body {
 
 
 .infrastructure{
+    padding: 40px 0 80px;
     position: relative;
+    color: var(--color-white);
+    text-align: center;
+
   
 }
 .infrastructure::before{
     content: "";
     display: block;
     width: 100%;
-    top: 20%;
+    top: 30%;
     bottom: 0;
     position: absolute;
-    background-image: linear-gradient var(--color-very-dark-desaturated-blue), var(--color-very-dark-gray-blue);
     z-index: -1;
+    background-color:var(--color-very-dark-black-blue);
+   border-radius: 0 100px 0 100px;
+}
+
+.infrastructure__title{
+font-size: 2.5rem;
+color: var(--color-white);
+text-align: center;
 }
 .infrastructure__phones{
     width: 100%;
+}
+.infrastructure__paragraf{
+    color: var(--color-Grayish-blue);
+    line-height: 1.5;
+    width: 100%;
+    margin:0, auto;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    
+   
 }
