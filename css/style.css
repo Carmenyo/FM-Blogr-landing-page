@@ -33,7 +33,7 @@ body {
 
 }
 .hero{
-   padding: var(--padding-container:0);
+    padding: var(--padding-container:0);
     overflow: hidden;
     min-height: 100vh;
     background-image: linear-gradient(var(--gradient-very-light-red),var(--gradient-light-red));
@@ -110,7 +110,7 @@ body {
     text-align: center;
     font-size: 1.8rem;
 }
-
+/* -------------------------------------------------------------- */
 .designed__illustration{
 
     background-position: center;
@@ -127,7 +127,7 @@ body {
 }
 .designed__paragraf{
     text-align: center;
-    color:var(--gradient-v-gray-blue)
+    color:var(--gradient-v-gray-blue);
     line-height: 1.5;
     letter-spacing: 1px;
     font-family: var(--font2);
@@ -138,6 +138,7 @@ body {
 
 }
 
+/* -------------------------------------------------------------- */
 
 .infrastructure{
     padding: 40px 0 80px;
@@ -155,7 +156,7 @@ body {
     bottom: 0;
     position: absolute;
     z-index: -1;
-    background-color:var(--color-very-dark-black-blue);
+    background-color:var(--color-very-dark-blue);
    border-radius: 0 100px 0 100px;
 }
 
@@ -175,6 +176,38 @@ text-align: center;
     margin-top: 20px;
     text-align: center;
     padding: 20px;
+}
+/* -------------------------------------------------------------- */
+
+.footer{
+    background-color: var(--color-very-dark-black-blue);
+    text-align: center;
+    font-family: var(--font2);
+    border-radius: 0 110px 0 0;
+}
+.footer__logo{
+    margin-bottom: 50px;
+}
+.footer__links{
+    margin-top: 50px;
+}
+
+.footer__links:nth-of-type(1){
     
+}
+.footer__link{
+    display: block;
+    text-decoration: none;
+    color: var(--color-Grayish-blue);
+    margin-top: 20px;
+
+}
+.footer__link--main{
+    font-weight: 700;
+text-decoration: none;
+    color: var(--color-white);
+  
+  
    
+
 }
