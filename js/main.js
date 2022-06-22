@@ -1,14 +1,14 @@
 "use strict";
 
 // Constantes
-const hamburguerIcon = document.getElementById("hamburguerIcon");
+const hamburgerIcon = document.getElementById("hamburgerIcon");
 const header = document.getElementById("header");
 
 const navLinks = document.querySelectorAll(".js-navLink");
 console.log(navLinks)
 
 // Funcionalidad menú Hamburguesa
-hamburguerIcon.addEventListener("click", () =>{
+hamburgerIcon.addEventListener("click", () =>{
     header.classList.toggle ("active");
 });
 
