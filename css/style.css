@@ -44,7 +44,7 @@ body{
   );
   background-position: center;
   background-size: 400%;
-  height: 83vh;
+  height: 80vh;
   border-radius: 0 0 0 120px ;
 }
 .head{
@@ -52,7 +52,6 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: space-between;
-width: 90% ;
 margin: 2em auto;
 }
 
@@ -130,45 +129,34 @@ margin: 2em auto;
   width: 130%;
 }
 
-.section2__subtitle{
-  margin-top: 30px;
-  font-family: var(--fontUbuntu);
-  font-weight: 500;
-  font-size: 2em;
-  color: var(--color-v-d-black-blue);
-}
-
-.section2__image,
-.section3__image,
-.section4__image{
-  width: 100%;
-}
-
-
-
-
-
-
-
-
- .info{
-  width: 80%;
-  margin: auto;
+.info{
+  width: 92%;
+  /* margin: auto; */
   display: flex;
   flex-direction: column;
   gap: 1.2em;
- 
  }
 
- .section2__paragraph{
-font-size: 1em;
-font-family: var(--fontOverpass);
-font-weight: 300;
-line-height: 1.5em;
-color: var(--gradient-v-d-desatured-blue);
- }
+.section1__subtitle{
+  margin-top: 30px;
+  font-family: var(--fontUbuntu);
+  font-weight: 500;
+  font-size: 2.2em;
+  color: var(--color-v-blue);
+}
 
-.section3{
+.section1__paragraph{
+  font-size: 1.2em;
+  font-family: var(--fontOverpass);
+  font-weight: 300;
+  line-height: 1.8em;
+  color: var(--gradient-v-d-desatured-blue);
+   }
+
+
+/* section3 */
+.section2{
+  width: 100%;
   background-image: url(/images/bg-pattern-circles.svg),
   linear-gradient(
      180deg,
@@ -179,27 +167,28 @@ color: var(--gradient-v-d-desatured-blue);
  flex-direction: column;
  align-items: center;
  justify-content: center;
- gap: 1em;
+
  height: 75vh;
 
  background-position: center;
- background-size: 170%;
+ background-size: 160%;
  background-repeat: no-repeat;
  border-radius: 0 100px 0 100px ;
  background-position: -120px -200px, 0px 0px;
- margin-top: 10em;
+ margin-top: 15em;
 }
 
-.section3__image{
-margin-top: -50%;
+.section2__image{
+margin-top: -70%;
+width: 100%;
 }
-.section3__title{
+.section2__title{
   font-size: 2em;
   font-family: var(--fontOverpass);
   font-weight: 600;
   color: var(--color-white);
 }
-.section3__paragraph{
+.section2__paragraph{
 font-size: 1em;
 line-height: 1.5em;
 color: var(--color-white);
@@ -207,7 +196,9 @@ font-family: var(--fontOverpass);
 font-weight: 300;
 }
 
-.section4{
+
+/* Section3 */
+.section3{
   width: 85%;
   margin: auto;
   display: flex;
@@ -216,8 +207,17 @@ font-weight: 300;
   justify-content: center;
   gap: 1.5em;
 }
-.section4__paragraph{
-  font-size: 1em;
+.section3__image{
+ height: 350px;
+}
+.section3__subtitle{
+  font-size: 1.8em;
+  font-family: var(--fontOverpass);
+  font-weight: 600;
+  color: var(--color-v-blue);
+}
+.section3__paragraph{
+  font-size: 1.1em;
   font-family: var(--fontOverpass);
   font-weight: 300;
   line-height: 1.5em;
@@ -240,19 +240,19 @@ font-weight: 300;
     width: 90px;
    }
 
-   ul{
+   .footer{
     font-family: var(--fontUbuntu);
     font-weight: 400;
    }
 
-  h4 {
+   .list__title {
 padding-bottom: 1em;
   }
   li {
     list-style: none;
     line-height: 1.5em;
   }
-  footer li a {
+  .link {
     text-decoration: none;
     color: var(--color-grayish-blue);
   }
@@ -267,11 +267,9 @@ padding-bottom: 1em;
     font-weight: 300;
   }
 
-.section1{
-  position: relative;
-}
+/* Menú Nav */
 
-nav {
+.menu__nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -291,36 +289,34 @@ nav {
     width: 90%;
     margin: auto;
   }
-  .nav__links button{
+  .nav__link__button {
   margin-bottom: 1em;
+  width: 100%;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: var(--fontOverpass);
+  font-weight: 600;
   }
 
-  nav ul{
+  .nav__link{
     text-align: center;
     width: 90%;
     margin: auto;
  
   }
 
-  ul div {
+  .nav__link__container {
     background-color: rgba(200, 200, 203, 0.815);
     padding: 1em;
     border-radius: 5px;
     display: none;
   }
 
-  nav button {
-    width: 100%;
-    font-size: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    border: none;
-    background: none;
-    font-family: var(--fontOverpass);
-    font-weight: 600;
-  }
   nav img{
     padding:0 0.5em;
   }
