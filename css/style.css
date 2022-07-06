@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-align: center;
 }
 
 :root {
@@ -591,7 +590,7 @@ justify-self: center;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
- 
+ text-align: left;
   justify-content: space-evenly;
   margin-bottom: 40px;
 }
