@@ -400,7 +400,7 @@ cursor: pointer;
 
   /* active state */
   .active .hamburger-Icon {
-    content: url(./images/icon-close.svg);
+    content: url(../images/icon-close.svg);
   }
 
   .active .menu__nav {
@@ -469,7 +469,7 @@ cursor: pointer;
     font-size: 25px;
 }
 .nav__link__image{
-  content: url(./images/icon-arrow-light.svg);
+  content: url(../images/icon-arrow-light.svg);
   color:var(--color-white);
 }
 .nav__buttons{
